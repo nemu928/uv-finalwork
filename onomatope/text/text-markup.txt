@@ -1,0 +1,176 @@
+卒業制作
+
+p-content__text p-content__text--size-l
+No.	サイズ / 行間	太さ Modifier
+1	15px / 35px	Regular	p-content__text--size-xs
+2	22px / 48px	Medium	p-content__text--size-xl --weight-m
+3	18px / auto	Regular	p-content__text--size-m
+4	20px / 45px	Regular	p-content__text--size-l
+5　　14px / auto        Regular	p-content__text--size-xxs
+5　　16px / auto        Regular	p-content__text--size-s
+
+
+注: Line-height (行間) はサイズとセットで変わるため、サイズModifierに含めて定義する
+
+---
+トップページ
+---
+[l-main]
+    [p-hero-area]
+ 	＃オノマトペずかん
+ 	[p-content__text] 親子で楽しむ、ことばと感覚のWeb図鑑 --size-xs
+
+    [p-features-section]
+ 	[p-content__text] オノマトペずかんは、いつもの日常に潜むオノマトペの不思議を、親子で一緒に探求するWeb図鑑です。１つのオノマトペから、たくさんの知識や会話が生まれるような体験を届けたいと考えています。--size-xl --weight-m
+
+
+
+    [p-usage-section]
+ 	#＃このサイトの使い方
+ 	＃＃＃1, オノマトペを探す・調べる
+ 	[p-content__text] カテゴリ別から気になるオノマトペを探そう！--size-m
+
+ 	＃＃＃2,深く学び、実践する
+ 	[p-content__text] 子供向けの解説と大人向けの解説を読んで深く学ぼう！
+ 				   ここでは、似ているオノマトペの違いを考えてみたり、オノマトペを見つけたり表現して写真を撮ったりするミッションが書かれてるからチャレンジしてみて--size-m
+
+ 	＃＃＃3,成長を記録する
+ 	[p-content__text] アルバムをつくろう！印刷して貼って、親子で振り返ってみてね--size-m
+
+    [p-read-section]
+ 	[__paragraph][p-content__text]調べる、遊ぶ、
+ 			      そして成長を記録する。--size-l
+
+ 	[__paragraph][p-content__text] このWeb図鑑が、
+ 			       あなたの親子の会話をより豊かにし、言葉の成長を支えます。--size-l
+
+ 	[__paragraph][p-content__text] さあ、一緒にことばの冒険に出かけましょう！ --size-l
+
+     [c-read-button]
+          [c-button]
+             [p-content__text]オノマトペをさがす
+             [__icon] --arrow-right
+
+     [c-footer-nav]
+       [__item] --is-active
+           [__icon] --home
+           [__text] トップ
+       [__item]
+            [__icon] --search
+            [__text] さがす
+       [_   _item]
+           [__icon] --album
+           [__text] アルバム
+
+
+---
+検索ページ
+---
+[l-main]
+ 
+    [c-back-button]
+       [__item]
+           [__icon] --arrow
+
+   #オノマトペ
+
+
+    [p-onomatope-list]
+
+
+        [c-cord]--orange js-modal-open (data-modal-target="modal-pokapoka")   /*ぽかぽか*/
+             [__image] --pokapoka-c
+
+ 	[c-modal] #modal-pokapoka
+ 	   [__overlay] js-modal-close
+ 	     [__inner]
+ 	     [__close] js-modal-close
+ 	　     [p-content__text] とじる
+                [__icon] --x
+ 
+ 	    [__main-content]
+ 	        [__image] --pokapoka-w
+
+ 	    [c-tab-switch]
+ 	        [__header]
+ 	            [__trigger]--is-active js-tab-trigger  (data-tab-id="explanation")
+ 	 	        [p-content__text] かいせつ --size-s
+ 	            [__trigger] js-tab-trigger  (data-tab-id="challenge")
+ 	 	        [p-content__text] チャレンジ --size-s
+
+ 	        [__body]
+ 	          #explanetion[__content]
+ 	 	      [p-content__text] 
+ 			 [__paragraph]
+					あったかくてきもちがいいときにつかうよ。
+ 					たとえば、、
+ 					おひさまがぽかぽか。
+ 					からだやこころがあたたかくなったときにもつかえるよ。--size-m
+ 			 [__paragraph]
+ 					類語とのニュアンスの差--size-s
+ 						ぽかぽか--size-xxs
+ 						環境がもたらす熱。日差しや部屋の空気など、包み込まれるような心地よさ。（例: ぽかぽかとした日だまり）--size-xxs
+
+ 						ほかほか--size-xxs
+ 						物体が発する熱。食べ物や湯気など、触れて熱い状態。（例: ほかほかのご飯）--size-xxs
+ 			 [__paragraph]
+ 					言い換え表現--size-s
+ 						暖かい、血行促進、リラックス、心地よい--size-xxs
+
+ 	            #challenge[__content]--is-hidden
+ 	 	        [p-content__text]
+ 			   [__paragraph]ぽかぽかしてみよう！--size-m
+ 			   [__paragraph]ヒント:お外に出てみる、お風呂に入ってみる、おふとんにはいってみる--size-s
+  
+
+        [c-cord]--orange js-modal-open (data-modal-target="modal-fuwafuwa")   /*ふわふわ*/
+             [__image] --fuwafuwa-c
+
+
+        [c-cord]--green js-modal-open
+             [__image]
+             [__word] シー
+
+
+        [c-cord]--pink js-modal-open
+             [__image]
+             [__word] にこにこ
+
+
+        [c-cord]--yellow js-modal-open
+             [__image]
+             [__word] きらきら
+
+
+        [c-cord]--purple js-modal-open
+             [__image]
+             [__word] シーン
+
+
+        [c-cord]--bule js-modal-open
+             [__image]
+             [__word] ザーザー
+
+        [c-cord]--orange js-modal-open
+             [__image]
+             [__word] ごろごろ
+
+        [c-cord]--pink js-modal-open
+             [__image]
+             [__word] どきどき
+
+        [c-cord]--orange js-modal-open
+             [__image]
+             [__word] とことこ
+
+
+  [c-footer-nav]
+       [__item] --is-active
+           [__icon] --home
+           [__text] トップ
+       [__item]
+            [__icon] --search
+            [__text] さがす
+       [_   _item]
+           [__icon] --album
+           [__text] アルバム

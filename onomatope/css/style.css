@@ -1,0 +1,179 @@
+@charset "UTF-8";
+/* style.scss */ /*リセットCSSやNormalize.css*/
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ul, li, nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+/*Sassの変数定義（色、フォントサイズ、ブレイクポイントなど）*/ /*メディアクエリ機能*/ /*全体のフォント、基本的なh1〜h6、aタグなどの設定*/
+body {
+  background-color: #FEFEFF;
+  font-family: "Kiwi Maru", sans-serif;
+  color: #45362C;
+  font-size: 18px;
+  line-height: 1.6;
+}
+@media screen and (max-width: 768px) {
+  body {
+    min-width: 360px;
+    margin-top: 120px;
+    margin-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 18px;
+}
+
+/*Sassの変数定義（色、フォントサイズ、ブレイクポイントなど）*/
+/*Sassの変数定義（色、フォントサイズ、ブレイクポイントなど）*/ /*メディアクエリ機能*/ /*Sassの変数定義（色、フォントサイズ、ブレイクポイントなど）*/ /*メディアクエリ機能*/ /*main*/
+.l-main {
+  width: 100%;
+  background-color: #A3C7FF;
+}
+@media screen and (min-width: 1024px) {
+  .l-main {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*component*/
+/*ひとつ前の戻るボタン*/ /*ボタン全般の設定*/ /*オノマトペ　カード*/ /*画面下部のナビゲーション*/ /*オノマトペ一覧へ飛ばすボタン*/
+/*project*/
+/*Sassの変数定義（色、フォントサイズ、ブレイクポイントなど）*/
+.p-content__text--size-xl {
+  font-size: 22px;
+}
+.p-content__text--size-l {
+  font-size: 20px;
+}
+.p-content__text--size-m {
+  font-size: 18px;
+}
+.p-content__text--size-s {
+  font-size: 16px;
+}
+.p-content__text--size-xs {
+  font-size: 15px;
+}
+.p-content__text--size-xxs {
+  font-size: 14px;
+}
+/*# sourceMappingURL=style.css.map */

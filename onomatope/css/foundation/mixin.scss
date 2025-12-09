@@ -1,0 +1,18 @@
+/*メディアクエリ機能*/
+
+@use "variables" as var;
+
+
+//pc用スタイルを適用するMixin　(1024px以上)
+@mixin media-pc {
+    @media screen and (min-width: var.$breakpoint-pc){
+        @content;
+    }     
+}
+
+//タブレット以下用スタイルを適用するMixin　(767px以上)
+@mixin media-tab {
+    @media screen and (max-width:var.$breakpoint-tab){
+        @content;
+    }        
+}

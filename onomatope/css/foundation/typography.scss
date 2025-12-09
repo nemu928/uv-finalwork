@@ -1,0 +1,38 @@
+/*全体のフォント、基本的なh1〜h6、aタグなどの設定*/
+@use "variables" as var;
+@use "mixin" ;
+
+
+body { 
+    //サイズ
+    @include mixin.media-tab{
+        min-width: var.$min-width-site;
+        margin-top: var.$space-top ;
+        margin-bottom: var.$spase-bottom ;
+    }
+    
+    @include mixin.media-pc {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    background-color: var.$color-primary;
+
+    font-family: 'Kiwi Maru', sans-serif;
+    color:var.$color-text-base; 
+    font-size: var.$font-size-m; 
+    line-height: 1.6; 
+}
+
+h1{
+    font-size: var.$font-size-h1;
+}
+h2{
+    font-size: var.$font-size-h2;
+}
+h3{
+    font-size: var.$font-size-h3;
+}
+p{
+    font-size: var.$font-size-m;
+}

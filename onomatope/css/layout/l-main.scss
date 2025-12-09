@@ -1,0 +1,16 @@
+/*main*/
+@use "../foundation/mixin.scss" as mixin;
+@use "../foundation/variables.scss" as var;
+
+
+.l-main {
+    //モバイルのデフォルト
+    width: 100%;
+    background-color: var.$color-bule;
+
+    @include mixin.media-pc {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

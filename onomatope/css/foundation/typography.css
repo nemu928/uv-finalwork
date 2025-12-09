@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/*Sassの変数定義（色、フォントサイズ、ブレイクポイントなど）*/ /*メディアクエリ機能*/ /*全体のフォント、基本的なh1〜h6、aタグなどの設定*/
+body {
+  background-color: #FEFEFF;
+  font-family: "Kiwi Maru", sans-serif;
+  color: #45362C;
+  font-size: 18px;
+  line-height: 1.6;
+}
+@media screen and (max-width: 768px) {
+  body {
+    min-width: 360px;
+    margin-top: 120px;
+    margin-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 18px;
+}
+/*# sourceMappingURL=typography.css.map */
